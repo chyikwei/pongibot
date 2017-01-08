@@ -1,0 +1,2 @@
+hanziconv==0.3.2
+requests==2.12.4
