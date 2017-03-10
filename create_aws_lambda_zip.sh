@@ -1,5 +1,5 @@
 ROOT_DIR=${PWD}
-ZIP_PATH="${PWD}/pongibot_v0.0.1.zip"
+ZIP_PATH="${PWD}/pongibot_v0.0.2.zip"
 
 zip -j9 ${ZIP_PATH} *.py
 

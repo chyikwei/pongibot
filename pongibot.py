@@ -59,6 +59,8 @@ def lambda_handler(event, context):
     if body['object'] == 'page':
         for entry in body['entry']:
             for msg in entry.get('messaging', []):
+                if 'delivery' in msg:
+                    continue
                 msg_txt = msg['message']['text']
                 sender_id = msg['sender']['id']
                 res_text = tuling_response_wrapper(TEST_USER_ID, msg_txt)
